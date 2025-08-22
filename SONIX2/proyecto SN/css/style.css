@@ -1,0 +1,110 @@
+/* Fondo degradado oscuro arriba */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #000000, #2d004d);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Contenedor principal */
+.landing-container {
+  width: 90%;
+  max-width: 360px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+/* Logo */
+.logo {
+  width: 240px;
+  max-width: 80vw;
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #00f0ff);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Botones centrados */
+.nav-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-buttons .btn {
+  background: linear-gradient(to right, #00f0ff, #0066ff);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 6px 0;
+  width: 80%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+/* Redes sociales */
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media p {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px #00f0ff);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.8;
+  color: #ccc;
+}
