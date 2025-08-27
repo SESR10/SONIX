@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonix - Inicio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Adaptaciones para los botones a la derecha */
+    .nav-buttons {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .album {
+      background: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 0 10px #00f0ff;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .album:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .album-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .album-artist {
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-container">
+    <nav class="nav-buttons">
+      <a href="../index.html" class="btn">Inicio</a>
+      <a href="../login.html" class="btn">Iniciar sesión</a>
+      <a href="sobrenosotros.html" class="btn">Sobre Nosotros</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+
+    <h1>Explora música con Sonix</h1>
+    <p>Disfruta de tus álbumes favoritos al estilo Spotify o Apple Music.</p>
+
+    <div class="albums">
+      <div class="album">
+        <img src="proyecto SN/img/albm_fuerza_regida.jpg" alt="Álbum 1">
+        <div class="album-title">Album Uno</div>
+        <div class="album-artist">Artista A</div>
+      </div>
+      <div class="album">
+        <img src="album_badbunny.jpg" alt="Álbum 2">
+        <div class="album-title">Album Dos</div>
+        <div class="album-artist">Artista B</div>
+      </div>
+      <div class="album">
+        <img src="../img/album3.jpg" alt="Álbum 3">
+        <div class="album-title">Album Tres</div>
+        <div class="album-artist">Artista C</div>
+      </div>
+      <div class="album">
+        <img src="../img/album4.jpg" alt="Álbum 4">
+        <div class="album-title">Album Cuatro</div>
+        <div class="album-artist">Artista D</div>
+      </div>
+    </div>
+
+    <footer id="contacto">
+      <p>📧 contacto@sonixmusic.com</p>
+      <p>📍 Villavicencio, Colombia</p>
+    </footer>
+  </div>
+</body>
+</html>
